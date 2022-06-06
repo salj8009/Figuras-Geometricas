@@ -4,13 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Figuras Geometricas ° parte del curso practico de JavaScript</title>
 </head>
 <body>
-    <main>
+    <header>
         <h1>Figuras Geometricas.</h1>
-    </main>
+        <h3>Primer practica JavaScript.</h3>
+    </header>
+    <main>
+        <section class="cuadrado">
+            <h2>Calcula el área y perímetro de un cuadrado.</h2>
+            <form>                
+                <label for="inputCuadrado">
+                    Cuanto mide cada lado de tu cuadrado?
+                </label>
+                <input id="inputCuadrado" type="number" placeholder="Escribe la medida">
 
+                <button id="btnCuadradoPerimetro">Calcula el perimetro.</button>
+                <button id="btnCuadradoArea">Calcula el area.</button>
+            </form>
+        </section>
+
+        <section class="triangulo">
+            <h2>Calcula el area y el perimetro del triangulo</h2>
+            <form>
+                <label for="imputtriangulo1">
+                    Cuanto mide el primer lado del triangulo?
+                </label>
+                <input id="imputtriangulo1" type="number" placeholder="Escribe la medida">
+                <label for="imputtriangulo2">
+                    Cuanto mide el segundo lado del triangulo?
+                </label>
+                <input id="imputtriangulo2" type="number" placeholder="Escribe la medida">
+                <label for="imputtriangulobase">
+                    Cuanto mide la base del triangulo?
+                </label>
+                <input id="imputtriangulobase" type="number" placeholder="Escribe la medida">
+                <label for="imputtrianguloaltura">
+                    Cuanto mide la altura del triangulo?
+                </label>
+                <input id="imputtrianguloaltura" type="number" placeholder="Escribe la medida">
+
+                <button id="btnTrianguloPerimetro">Calcula el perimetro.</button>
+                <button id="btnTrianguloArea">Calcula el area.</button>
+            </form>
+        </section>
+
+        <section class="circulo">
+            <h2>Calcula el diametro, area y el perimetro del circulo</h2>
+            <form>
+                <label for="imputdiametrocirculo">
+                    Cuanto mide el radio?
+                </label>
+                <input id="imputdiametrocirculo" type="number" placeholder="Escribe la medida">
+                <button id="btncalcularadio">Calcula el diamtro</button>
+                <button id="btncalculaperimetro">Calcula el perimetro</button>
+                <button id="btncalcularea">Calcula el area</button>
+                
+            </form>
+        </section>
+    </main>
     <script src="./main.js"></script>
 </body>
 </html>
